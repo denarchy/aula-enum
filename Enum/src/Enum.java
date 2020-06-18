@@ -1,8 +1,16 @@
+import java.util.Date;
+
+import entities.Order;
+import entities.enums.OrderStatus;
 
 public class Enum {
 
 	public static void main(String[] args) {
-		System.out.println("enum comecemos");
+		Order order = new Order(1080, new Date(), OrderStatus.PENDING_PAYMENTS);
+		
+		System.out.println(order);
+		
+		
 
 	}
 
